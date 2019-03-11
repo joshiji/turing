@@ -1,0 +1,59 @@
+//  src/theme.scss
+
+@import 'bulma/sass/utilities/initial-variables.sass';
+
+// Font
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+// your customization as described in the Bulma docs
+$maroon: #772432;
+$grey-light: #A9B2B1;
+$red: #ed254e;
+$blue: #011936;
+$grey: #465362;
+$yellow: #f9dc5c;
+$blue-shade: #f4fffd;
+
+$primary: $blue;
+$warning: $yellow;
+$danger: $red;
+$info: $maroon;
+$text: #000000;
+
+$navbar-item-img-max-height: 2.5rem;
+//$navbar-height: 4.5rem;
+
+$family-sans-serif: "Montserrat", sans-serif;
+
+@import 'bulma/bulma.sass';
+
+@import 'bulma-checkradio/dist/css/bulma-checkradio.sass';
+
+
+.full-width {
+    width: 100%;
+}
+.max-width-500 {
+    max-width: 500px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.app {
+    margin: 0 0 300px;
+    /* bottom = footer height */
+
+}
+
+.sticky-footer {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
