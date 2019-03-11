@@ -1,0 +1,106 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Attribute": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "AttributeValue": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "Audit": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "Customer": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "Department": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "OrderDetail": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "Orders": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "ProductAttribute": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "ProductCategory": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "Review": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "Shipping": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "ShippingRegion": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "ShoppingCart": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "Tax": {
+    "dataSource": "mysqldbc9",
+    "public": true
+  },
+  "CustomUser": {
+    "dataSource": "db",
+    "public": true
+  }
+}

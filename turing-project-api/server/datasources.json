@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqldbc9": {
+    "host": "",
+    "port": 0,
+    "url": "mysql://skjoshi:@localhost/c9",
+    "database": "",
+    "password": "",
+    "name": "mysqldbc9",
+    "user": "",
+    "connector": "mysql"
+  }
+}
