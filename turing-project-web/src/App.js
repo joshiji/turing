@@ -17,13 +17,13 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div class="app" >
+        <div className="app" >
           <Navbar />
           
           <Route path='/login' component={Login} />
           <Route path='/signup' component={Signup} />
           
-          <footer class="footer sticky-footer has-background-primary">
+          <footer className="footer sticky-footer has-background-primary">
             <section className="section  has-text-weight-bold 	">
               <div className="container">
                 <h6 className="title has-text-white has-text-centered">Footer</h6>

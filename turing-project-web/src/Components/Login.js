@@ -7,10 +7,11 @@ class Login extends Component {
         return (
             <section className="section">
                 <div className="container">
+                  <p className="is-size-4 has-text-primary has-text-centered">Login</p>
                   <div className="columns">
                     <div className="column is-one-third is-offset-one-third">
                       <div className="field">
-                        <label class="label">Email</label>
+                        <label className="label">Email</label>
                         <p className="control has-icons-left">
                           <input className="input  max-width-500" type="email" placeholder="Email" />
                           <span className="icon is-small is-left">
@@ -20,7 +21,7 @@ class Login extends Component {
                         </p>
                       </div>
                       <div className="field">
-                        <label class="label">Password</label>
+                        <label className="label">Password</label>
                         <p className="control has-icons-left">
                           <input className="input  max-width-500" type="password" placeholder="Password" />
                           <span className="icon is-small is-left">

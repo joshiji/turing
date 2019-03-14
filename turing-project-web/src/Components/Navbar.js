@@ -36,12 +36,12 @@ class Navbar extends Component {
                 
                     <div className="navbar-end">
                     
-                      <div class="navbar-item">
-                        <div class="field">
-                          <div class="control has-icons-right">
-                            <input class="input" type="text" placeholder="Search" />
-                            <span class="icon is-small has-text-primary is-right">
-                              <i class="fas fa-search"></i>
+                      <div className="navbar-item">
+                        <div className="field">
+                          <div className="control has-icons-right">
+                            <input className="input" type="text" placeholder="Search" />
+                            <span className="icon is-small has-text-primary is-right">
+                              <i className="fas fa-search"></i>
                             </span>
                           </div>
                         </div>
@@ -50,8 +50,8 @@ class Navbar extends Component {
                       <div className="navbar-item">
                         <div className="buttons">
                           <Link className="button is-white has-text-primary is-medium" to='/cart'>
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-shopping-cart"></i>
+                            <span className="icon is-small is-left">
+                              <i className="fas fa-shopping-cart"></i>
                             </span>
                           </Link>
                         </div>
