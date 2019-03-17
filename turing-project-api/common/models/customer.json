@@ -65,7 +65,7 @@
       "mysql": {
         "columnName": "password",
         "dataType": "varchar",
-        "dataLength": 50,
+        "dataLength": 200,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "N"
