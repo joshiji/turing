@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Signup extends Component {
+class Contact extends Component {
     
     render() {
         return (
             <section className="section">
                 <div className="container">
-                  
+                  <p className="is-size-4 has-text-primary has-text-centered">Contact us</p>
                   <div className="columns">
-                    <div className="column is-one-third is-offset-one-third box">
-                      <p className="is-size-4 has-text-primary has-text-centered">Signup</p>
+                    <div className="column is-one-third is-offset-one-third">
                       <div className="field">
                         <label className="label">Full name</label>
                         <p className="control has-icons-left">
@@ -32,26 +31,16 @@ class Signup extends Component {
                       </div>
                       
                       <div className="field">
-                        <label className="label">Password</label>
-                        <p className="control has-icons-left">
-                          <input className="input  max-width-500" type="password" placeholder="*********" />
-                          <span className="icon is-small is-left">
-                            <i className="fas fa-lock"></i>
-                          </span>
-                        </p>
+                        <label className="label">Message</label>
+                        <div class="control">
+                          <textarea class="textarea" placeholder="Message"></textarea>
+                        </div>
                       </div>
                       <div className="field">
                         <p className="control">
                           <button className="button is-danger full-width max-width-500">
-                            Sign up
+                            Send
                           </button>
-                        </p>
-                      </div>
-                      <div className="field">
-                        <p className="control">
-                          <Link className="button is-white has-text-primary is-outline full-width max-width-500" to="/login">
-                            Existing user? Login
-                          </Link>
                         </p>
                       </div>
                     </div>
@@ -62,4 +51,4 @@ class Signup extends Component {
     }
 }
 
-export default Signup;
+export default Contact;

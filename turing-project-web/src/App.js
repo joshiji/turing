@@ -10,6 +10,8 @@ import Navbar from './Components/Navbar';
 
 import Login from './Components/Login';
 import Signup from './Components/Signup';
+import Cart from './Components/Cart';
+import Contact from './Components/Contact';
 
 import './App.css';
 
@@ -22,6 +24,8 @@ class App extends Component {
           
           <Route path='/login' component={Login} />
           <Route path='/signup' component={Signup} />
+          <Route path='/cart' component={Cart} />
+          <Route path='/contact-us' component={Contact} />
           
           <footer className="footer sticky-footer has-background-primary">
             <section className="section  has-text-weight-bold 	">

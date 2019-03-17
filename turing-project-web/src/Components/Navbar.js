@@ -2,6 +2,20 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 class Navbar extends Component {
+  
+    constructor(props) {
+      super(props);
+      this.state = {
+        menuOpen: false
+      };
+      this.toggleMenu = this.toggleMenu.bind(this);
+    }
+    
+    toggleMenu() {
+      this.setState({
+        menuOpen: !this.state.menuOpen
+      });
+    }
     
     render() {
         return (
@@ -12,14 +26,16 @@ class Navbar extends Component {
                       T-SHOP
                     </a>
                 
-                    <a href="#" role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <a href="#" onClick={this.toggleMenu} role="button" 
+                      className={"navbar-burger burger " + (this.state.menuOpen ? "is-active" : "")} 
+                      aria-label="menu" aria-expanded="false" data-target="navbarMenu">
                       <span aria-hidden="true"></span>
                       <span aria-hidden="true"></span>
                       <span aria-hidden="true"></span>
                     </a>
                   </div>
-                
-                  <div id="navbarBasicExample" className="navbar-menu">
+                  
+                  <div id="navbarBasicExample" className={"navbar-menu " + (this.state.menuOpen ? "is-active" : "")} id="navbarMenu">
                     <div className="navbar-start">
                       <Link className="navbar-item" to="/men">
                         Men
@@ -43,6 +59,7 @@ class Navbar extends Component {
                             <span className="icon is-small has-text-primary is-right">
                               <i className="fas fa-search"></i>
                             </span>
+                            
                           </div>
                         </div>
                       </div>
@@ -53,6 +70,7 @@ class Navbar extends Component {
                             <span className="icon is-small is-left">
                               <i className="fas fa-shopping-cart"></i>
                             </span>
+                            {(this.state.menuOpen && "Cart")}
                           </Link>
                         </div>
                       </div>
