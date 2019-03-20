@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -19,13 +19,13 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="app" >
-          <Navbar />
+        <div className="app">
+          <Navbar/>
 
-          <Route path='/login' component={Login} />
-          <Route path='/signup' component={Signup} />
-          <Route path='/cart' component={Cart} />
-          <Route path='/contact-us' component={Contact} />
+          <Route path='/login' component={Login}/>
+          <Route path='/signup' component={Signup}/>
+          <Route path='/cart' component={Cart}/>
+          <Route path='/contact-us' component={Contact}/>
 
           <footer className="footer sticky-footer has-background-primary">
             <section className="section  has-text-weight-bold 	">
