@@ -21,12 +21,12 @@ class App extends Component {
       <Router>
         <div className="app" >
           <Navbar />
-          
+
           <Route path='/login' component={Login} />
           <Route path='/signup' component={Signup} />
           <Route path='/cart' component={Cart} />
           <Route path='/contact-us' component={Contact} />
-          
+
           <footer className="footer sticky-footer has-background-primary">
             <section className="section  has-text-weight-bold 	">
               <div className="container">
