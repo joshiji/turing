@@ -9,7 +9,7 @@ class Login extends Component {
         <div className="container">
 
           <div className="columns">
-            <div className="column is-one-third is-offset-one-third box">
+            <div className="column is-one-third is-offset-one-third">
               <p className="is-size-4 has-text-primary has-text-centered">Login</p>
               <div className="field">
                 <label className="label">Email</label>

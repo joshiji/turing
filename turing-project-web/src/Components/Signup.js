@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Signup extends Component {
-    
+
     render() {
         return (
             <section className="section">
                 <div className="container">
-                  
+
                   <div className="columns">
-                    <div className="column is-one-third is-offset-one-third box">
+                    <div className="column is-one-third is-offset-one-third">
                       <p className="is-size-4 has-text-primary has-text-centered">Signup</p>
                       <div className="field">
                         <label className="label">Full name</label>
@@ -20,7 +20,7 @@ class Signup extends Component {
                           </span>
                         </p>
                       </div>
-                      
+
                       <div className="field">
                         <label className="label">Email</label>
                         <p className="control has-icons-left">
@@ -30,7 +30,7 @@ class Signup extends Component {
                           </span>
                         </p>
                       </div>
-                      
+
                       <div className="field">
                         <label className="label">Password</label>
                         <p className="control has-icons-left">
