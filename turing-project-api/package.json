@@ -20,6 +20,7 @@
     "loopback-connector-mysql": "^5.3.1",
     "loopback-datasource-juggler": "^3.23.0",
     "serve-favicon": "^2.0.1",
+    "stripe": "^6.28.0",
     "strong-error-handler": "^3.0.0"
   },
   "devDependencies": {
